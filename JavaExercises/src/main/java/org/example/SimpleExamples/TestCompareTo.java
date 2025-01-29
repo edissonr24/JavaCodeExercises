@@ -23,7 +23,7 @@ public class TestCompareTo {
 	    
 //	    result = str3.compareTo( str4 );
 //	    System.out.println(result);
-	       
+
 	    
 	    try {
 	    	result = str4.compareTo( str3 );

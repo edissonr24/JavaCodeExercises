@@ -51,7 +51,8 @@ public class TerminalOperations {
          */
         printSpace("toArray");
         List<String> list1 = Arrays.asList("apple", "banana", "orange", "grape");
-        String[] arrayString = list1.stream().toArray(size -> new String[size]);
+        //String[] arrayString = list1.stream().toArray(size -> new String[size]);
+        String[] arrayString = list1.toArray(String[]::new);
         for ( String value:arrayString) {
             System.out.println(value);
         }
@@ -82,6 +83,10 @@ public class TerminalOperations {
 
         // 1st argument, init value = 0
         int sum2 = Arrays.stream(numbers2).reduce(0, (a, b) -> a + b);
+        int sum3 = Arrays.stream(numbers2).sum();
+
+        List<Integer> numbersListE = Arrays.asList(1, 2, 3, 4, 5);
+        int sum4 = numbersListE.stream().mapToInt(Integer::intValue).sum();
 
         System.out.println("sum : " + sum2); // 55
 

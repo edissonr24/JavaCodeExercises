@@ -1,9 +1,9 @@
-package org.example.JavaChallenges2024.p02_functional_prog.p01_inter_term_operations;
+package org.example.JavaChallenges2024.p02_functional_prog.p01_inter_term_operations.exercises01;
 
 class User {
-    String id;
-    String name;
-    Integer age;
+    private String id;
+    private String name;
+    private Integer age;
 
     String getId() {
         return id;

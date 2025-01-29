@@ -20,7 +20,7 @@ public class Ej02_ListExample {
 		//access via index
 		String element0 = (String) listA.get(0);
 		String element1 = (String) listA.get(1);
-		String element3 = (String) listA.get(2);
+		//String element3 = (String) listA.get(2);
 
 
 		//access via Iterator
